@@ -1,0 +1,22 @@
+servers:
+  lobby:
+    address: 149.255.33.154:50243
+    motd: "Eaglercraft Gateway"
+    restricted: false
+listeners:
+  - query_port: 25577
+    motd: "Eaglercraft Proxy"
+    tab_list: GLOBAL_PING
+    query_enabled: false
+    proxy_protocol: false
+    forced_hosts:
+      pvp.md-5.net: lobby
+    ping_passthrough: false
+    priorities:
+      - lobby
+    bind_local_address: true
+    host: 0.0.0.0:25565
+    max_players: 100
+    tab_size: 60
+    force_default_server: true
+online_mode: false
